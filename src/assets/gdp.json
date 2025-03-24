@@ -1,0 +1,1054 @@
+{
+  "gdp": [
+    {
+      "id": 2,
+      "year": 2023,
+      "gdp_growth_rate": 3.56,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 3,
+      "year": 2022,
+      "gdp_growth_rate": 8.86,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 4,
+      "year": 2021,
+      "gdp_growth_rate": 3.32,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 5,
+      "year": 2020,
+      "gdp_growth_rate": -5.46,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 6,
+      "year": 2019,
+      "gdp_growth_rate": 4.41,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 7,
+      "year": 2018,
+      "gdp_growth_rate": 4.84,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 8,
+      "year": 2017,
+      "gdp_growth_rate": 5.81,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 9,
+      "year": 2016,
+      "gdp_growth_rate": 4.45,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 10,
+      "year": 2015,
+      "gdp_growth_rate": 5.09,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 11,
+      "year": 2014,
+      "gdp_growth_rate": 6.01,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 12,
+      "year": 2013,
+      "gdp_growth_rate": 4.69,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 13,
+      "year": 2012,
+      "gdp_growth_rate": 5.47,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 14,
+      "year": 2011,
+      "gdp_growth_rate": 5.29,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 15,
+      "year": 2010,
+      "gdp_growth_rate": 7.42,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 16,
+      "year": 2009,
+      "gdp_growth_rate": -1.51,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 17,
+      "year": 2008,
+      "gdp_growth_rate": 4.83,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 18,
+      "year": 2007,
+      "gdp_growth_rate": 6.3,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 19,
+      "year": 2006,
+      "gdp_growth_rate": 5.58,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 20,
+      "year": 2005,
+      "gdp_growth_rate": 5.33,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 21,
+      "year": 2004,
+      "gdp_growth_rate": 6.78,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 22,
+      "year": 2003,
+      "gdp_growth_rate": 5.79,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 23,
+      "year": 2002,
+      "gdp_growth_rate": 5.39,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 24,
+      "year": 2001,
+      "gdp_growth_rate": 0.52,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 25,
+      "year": 2000,
+      "gdp_growth_rate": 8.86,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 26,
+      "year": 1999,
+      "gdp_growth_rate": 6.14,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 27,
+      "year": 1998,
+      "gdp_growth_rate": -7.36,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 28,
+      "year": 1997,
+      "gdp_growth_rate": 7.32,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 29,
+      "year": 1996,
+      "gdp_growth_rate": 10,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 30,
+      "year": 1995,
+      "gdp_growth_rate": 9.83,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 31,
+      "year": 1994,
+      "gdp_growth_rate": 9.21,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 32,
+      "year": 1993,
+      "gdp_growth_rate": 9.89,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 33,
+      "year": 1992,
+      "gdp_growth_rate": 8.89,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 34,
+      "year": 1991,
+      "gdp_growth_rate": 9.55,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 35,
+      "year": 1990,
+      "gdp_growth_rate": 9.01,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 36,
+      "year": 1989,
+      "gdp_growth_rate": 9.06,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 37,
+      "year": 1988,
+      "gdp_growth_rate": 9.94,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 38,
+      "year": 1987,
+      "gdp_growth_rate": 5.19,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 39,
+      "year": 1986,
+      "gdp_growth_rate": 1.24,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 40,
+      "year": 1985,
+      "gdp_growth_rate": -1.03,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 41,
+      "year": 1984,
+      "gdp_growth_rate": 7.76,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 42,
+      "year": 1983,
+      "gdp_growth_rate": 6.25,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 43,
+      "year": 1982,
+      "gdp_growth_rate": 5.94,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 44,
+      "year": 1981,
+      "gdp_growth_rate": 6.94,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 45,
+      "year": 1980,
+      "gdp_growth_rate": 7.44,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 46,
+      "year": 1979,
+      "gdp_growth_rate": 9.35,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 47,
+      "year": 1978,
+      "gdp_growth_rate": 6.65,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 48,
+      "year": 1977,
+      "gdp_growth_rate": 7.75,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 49,
+      "year": 1976,
+      "gdp_growth_rate": 11.56,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 50,
+      "year": 1975,
+      "gdp_growth_rate": 0.8,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 51,
+      "year": 1974,
+      "gdp_growth_rate": 8.32,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 102,
+      "year": 2023,
+      "gdp_growth_rate": 2.89,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 103,
+      "year": 2022,
+      "gdp_growth_rate": 2.51,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 104,
+      "year": 2021,
+      "gdp_growth_rate": 6.06,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 105,
+      "year": 2020,
+      "gdp_growth_rate": -2.16,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 106,
+      "year": 2019,
+      "gdp_growth_rate": 2.58,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 107,
+      "year": 2018,
+      "gdp_growth_rate": 2.97,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 108,
+      "year": 2017,
+      "gdp_growth_rate": 2.46,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 109,
+      "year": 2016,
+      "gdp_growth_rate": 1.82,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 110,
+      "year": 2015,
+      "gdp_growth_rate": 2.95,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 111,
+      "year": 2014,
+      "gdp_growth_rate": 2.52,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 112,
+      "year": 2013,
+      "gdp_growth_rate": 2.12,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 113,
+      "year": 2012,
+      "gdp_growth_rate": 2.29,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 114,
+      "year": 2011,
+      "gdp_growth_rate": 1.56,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 115,
+      "year": 2010,
+      "gdp_growth_rate": 2.7,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 116,
+      "year": 2009,
+      "gdp_growth_rate": -2.58,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 117,
+      "year": 2008,
+      "gdp_growth_rate": 0.11,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 118,
+      "year": 2007,
+      "gdp_growth_rate": 2,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 119,
+      "year": 2006,
+      "gdp_growth_rate": 2.78,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 120,
+      "year": 2005,
+      "gdp_growth_rate": 3.48,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 121,
+      "year": 2004,
+      "gdp_growth_rate": 3.85,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 122,
+      "year": 2003,
+      "gdp_growth_rate": 2.8,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 123,
+      "year": 2002,
+      "gdp_growth_rate": 1.7,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 124,
+      "year": 2001,
+      "gdp_growth_rate": 0.96,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 125,
+      "year": 2000,
+      "gdp_growth_rate": 4.08,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 126,
+      "year": 1999,
+      "gdp_growth_rate": 4.79,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 127,
+      "year": 1998,
+      "gdp_growth_rate": 4.48,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 128,
+      "year": 1997,
+      "gdp_growth_rate": 4.45,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 129,
+      "year": 1996,
+      "gdp_growth_rate": 3.77,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 130,
+      "year": 1995,
+      "gdp_growth_rate": 2.68,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 131,
+      "year": 1994,
+      "gdp_growth_rate": 4.03,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 132,
+      "year": 1993,
+      "gdp_growth_rate": 2.75,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 133,
+      "year": 1992,
+      "gdp_growth_rate": 3.52,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 134,
+      "year": 1991,
+      "gdp_growth_rate": -0.11,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 135,
+      "year": 1990,
+      "gdp_growth_rate": 1.89,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 136,
+      "year": 1989,
+      "gdp_growth_rate": 3.67,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 137,
+      "year": 1988,
+      "gdp_growth_rate": 4.18,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 138,
+      "year": 1987,
+      "gdp_growth_rate": 3.45,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 139,
+      "year": 1986,
+      "gdp_growth_rate": 3.46,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 140,
+      "year": 1985,
+      "gdp_growth_rate": 4.17,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 141,
+      "year": 1984,
+      "gdp_growth_rate": 7.24,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 142,
+      "year": 1983,
+      "gdp_growth_rate": 4.58,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 143,
+      "year": 1982,
+      "gdp_growth_rate": -1.8,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 144,
+      "year": 1981,
+      "gdp_growth_rate": 2.54,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 145,
+      "year": 1980,
+      "gdp_growth_rate": -0.26,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 146,
+      "year": 1979,
+      "gdp_growth_rate": 3.17,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 147,
+      "year": 1978,
+      "gdp_growth_rate": 5.54,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 148,
+      "year": 1977,
+      "gdp_growth_rate": 4.62,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 149,
+      "year": 1976,
+      "gdp_growth_rate": 5.39,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 150,
+      "year": 1975,
+      "gdp_growth_rate": -0.21,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 151,
+      "year": 1974,
+      "gdp_growth_rate": -0.54,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 152,
+      "year": 2023,
+      "gdp_growth_rate": 8.15,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 153,
+      "year": 2022,
+      "gdp_growth_rate": 6.99,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 154,
+      "year": 2021,
+      "gdp_growth_rate": 9.69,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 155,
+      "year": 2020,
+      "gdp_growth_rate": -5.78,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 156,
+      "year": 2019,
+      "gdp_growth_rate": 3.87,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 157,
+      "year": 2018,
+      "gdp_growth_rate": 6.45,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 158,
+      "year": 2017,
+      "gdp_growth_rate": 6.8,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 159,
+      "year": 2016,
+      "gdp_growth_rate": 8.26,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 160,
+      "year": 2015,
+      "gdp_growth_rate": 8,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 161,
+      "year": 2014,
+      "gdp_growth_rate": 7.41,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 162,
+      "year": 2013,
+      "gdp_growth_rate": 6.39,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 163,
+      "year": 2012,
+      "gdp_growth_rate": 5.46,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 164,
+      "year": 2011,
+      "gdp_growth_rate": 5.24,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 165,
+      "year": 2010,
+      "gdp_growth_rate": 8.5,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 166,
+      "year": 2009,
+      "gdp_growth_rate": 7.86,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 167,
+      "year": 2008,
+      "gdp_growth_rate": 3.09,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 168,
+      "year": 2007,
+      "gdp_growth_rate": 7.66,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 169,
+      "year": 2006,
+      "gdp_growth_rate": 8.06,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 170,
+      "year": 2005,
+      "gdp_growth_rate": 7.92,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 171,
+      "year": 2004,
+      "gdp_growth_rate": 7.92,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 172,
+      "year": 2003,
+      "gdp_growth_rate": 7.86,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 173,
+      "year": 2002,
+      "gdp_growth_rate": 3.8,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 174,
+      "year": 2001,
+      "gdp_growth_rate": 4.82,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 175,
+      "year": 2000,
+      "gdp_growth_rate": 3.84,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 176,
+      "year": 1999,
+      "gdp_growth_rate": 8.85,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 177,
+      "year": 1998,
+      "gdp_growth_rate": 6.18,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 178,
+      "year": 1997,
+      "gdp_growth_rate": 4.05,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 179,
+      "year": 1996,
+      "gdp_growth_rate": 7.55,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 180,
+      "year": 1995,
+      "gdp_growth_rate": 7.57,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 181,
+      "year": 1994,
+      "gdp_growth_rate": 6.66,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 182,
+      "year": 1993,
+      "gdp_growth_rate": 4.75,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 183,
+      "year": 1992,
+      "gdp_growth_rate": 5.48,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 184,
+      "year": 1991,
+      "gdp_growth_rate": 1.06,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 185,
+      "year": 1990,
+      "gdp_growth_rate": 5.53,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 186,
+      "year": 1989,
+      "gdp_growth_rate": 5.95,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 187,
+      "year": 1988,
+      "gdp_growth_rate": 9.63,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 188,
+      "year": 1987,
+      "gdp_growth_rate": 3.97,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 189,
+      "year": 1986,
+      "gdp_growth_rate": 4.78,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 190,
+      "year": 1985,
+      "gdp_growth_rate": 5.25,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 191,
+      "year": 1984,
+      "gdp_growth_rate": 3.82,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 192,
+      "year": 1983,
+      "gdp_growth_rate": 7.29,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 193,
+      "year": 1982,
+      "gdp_growth_rate": 3.48,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 194,
+      "year": 1981,
+      "gdp_growth_rate": 6.01,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 195,
+      "year": 1980,
+      "gdp_growth_rate": 6.74,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 196,
+      "year": 1979,
+      "gdp_growth_rate": -5.24,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 197,
+      "year": 1978,
+      "gdp_growth_rate": 5.71,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 198,
+      "year": 1977,
+      "gdp_growth_rate": 7.25,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 199,
+      "year": 1976,
+      "gdp_growth_rate": 1.66,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 200,
+      "year": 1975,
+      "gdp_growth_rate": 9.15,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 201,
+      "year": 1974,
+      "gdp_growth_rate": 1.19,
+      "country_name": "India",
+      "iso_code": "IN"
+    }
+  ]
+}

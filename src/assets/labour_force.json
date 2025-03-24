@@ -1,0 +1,718 @@
+{
+  "labour_force": [
+    {
+      "id": 1,
+      "year": 2023,
+      "labour_force_total": 17923168,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 2,
+      "year": 2022,
+      "labour_force_total": 17583325,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 3,
+      "year": 2021,
+      "labour_force_total": 17243512,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 4,
+      "year": 2020,
+      "labour_force_total": 16875265,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 5,
+      "year": 2019,
+      "labour_force_total": 16633299,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 6,
+      "year": 2018,
+      "labour_force_total": 16209365,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 7,
+      "year": 2017,
+      "labour_force_total": 15776197,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 8,
+      "year": 2016,
+      "labour_force_total": 15412226,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 9,
+      "year": 2015,
+      "labour_force_total": 15100271,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 10,
+      "year": 2014,
+      "labour_force_total": 14719087,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 11,
+      "year": 2013,
+      "labour_force_total": 14171099,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 12,
+      "year": 2012,
+      "labour_force_total": 13634474,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 13,
+      "year": 2011,
+      "labour_force_total": 13110062,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 14,
+      "year": 2010,
+      "labour_force_total": 12775608,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 15,
+      "year": 2009,
+      "labour_force_total": 12412070,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 16,
+      "year": 2008,
+      "labour_force_total": 12025538,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 17,
+      "year": 2007,
+      "labour_force_total": 11663107,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 18,
+      "year": 2006,
+      "labour_force_total": 11317475,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 19,
+      "year": 2005,
+      "labour_force_total": 10983732,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 20,
+      "year": 2004,
+      "labour_force_total": 10663360,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 21,
+      "year": 2003,
+      "labour_force_total": 10360337,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 22,
+      "year": 2002,
+      "labour_force_total": 10067360,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 23,
+      "year": 2001,
+      "labour_force_total": 9782029,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 24,
+      "year": 2000,
+      "labour_force_total": 9494994,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 25,
+      "year": 1999,
+      "labour_force_total": 9222525,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 26,
+      "year": 1998,
+      "labour_force_total": 8950857,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 27,
+      "year": 1997,
+      "labour_force_total": 8666708,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 28,
+      "year": 1996,
+      "labour_force_total": 8412946,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 29,
+      "year": 1995,
+      "labour_force_total": 8169737,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 30,
+      "year": 1994,
+      "labour_force_total": 7933378,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 31,
+      "year": 1993,
+      "labour_force_total": 7702450,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 32,
+      "year": 1992,
+      "labour_force_total": 7474197,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 33,
+      "year": 1991,
+      "labour_force_total": 7241517,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 34,
+      "year": 1990,
+      "labour_force_total": 7007888,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 35,
+      "year": 2023,
+      "labour_force_total": 171333247,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 36,
+      "year": 2022,
+      "labour_force_total": 169115595,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 37,
+      "year": 2021,
+      "labour_force_total": 167156631,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 38,
+      "year": 2020,
+      "labour_force_total": 166539547,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 39,
+      "year": 2019,
+      "labour_force_total": 167950514,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 40,
+      "year": 2018,
+      "labour_force_total": 166139572,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 41,
+      "year": 2017,
+      "labour_force_total": 164843640,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 42,
+      "year": 2016,
+      "labour_force_total": 163238908,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 43,
+      "year": 2015,
+      "labour_force_total": 161385944,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 44,
+      "year": 2014,
+      "labour_force_total": 160437311,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 45,
+      "year": 2013,
+      "labour_force_total": 159795573,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 46,
+      "year": 2012,
+      "labour_force_total": 159448346,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 47,
+      "year": 2011,
+      "labour_force_total": 158407011,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 48,
+      "year": 2010,
+      "labour_force_total": 158304024,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 49,
+      "year": 2009,
+      "labour_force_total": 158353162,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 50,
+      "year": 2008,
+      "labour_force_total": 158272885,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 51,
+      "year": 2007,
+      "labour_force_total": 156588966,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 52,
+      "year": 2006,
+      "labour_force_total": 155267046,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 53,
+      "year": 2005,
+      "labour_force_total": 153120588,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 54,
+      "year": 2004,
+      "labour_force_total": 151218126,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 55,
+      "year": 2003,
+      "labour_force_total": 149992325,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 56,
+      "year": 2002,
+      "labour_force_total": 149241895,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 57,
+      "year": 2001,
+      "labour_force_total": 148213470,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 58,
+      "year": 2000,
+      "labour_force_total": 147139887,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 59,
+      "year": 1999,
+      "labour_force_total": 145083084,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 60,
+      "year": 1998,
+      "labour_force_total": 143097780,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 61,
+      "year": 1997,
+      "labour_force_total": 141357334,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 62,
+      "year": 1996,
+      "labour_force_total": 138773559,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 63,
+      "year": 1995,
+      "labour_force_total": 136621148,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 64,
+      "year": 1994,
+      "labour_force_total": 134611321,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 65,
+      "year": 1993,
+      "labour_force_total": 132266996,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 66,
+      "year": 1992,
+      "labour_force_total": 130853396,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 67,
+      "year": 1991,
+      "labour_force_total": 128740615,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 68,
+      "year": 1990,
+      "labour_force_total": 127821416,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 69,
+      "year": 2023,
+      "labour_force_total": 588969543,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 70,
+      "year": 2022,
+      "labour_force_total": 568900960,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 71,
+      "year": 2021,
+      "labour_force_total": 550352877,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 72,
+      "year": 2020,
+      "labour_force_total": 532528354,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 73,
+      "year": 2019,
+      "labour_force_total": 531383542,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 74,
+      "year": 2018,
+      "labour_force_total": 524342818,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 75,
+      "year": 2017,
+      "labour_force_total": 516812065,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 76,
+      "year": 2016,
+      "labour_force_total": 508796784,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 77,
+      "year": 2015,
+      "labour_force_total": 500763345,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 78,
+      "year": 2014,
+      "labour_force_total": 492791763,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 79,
+      "year": 2013,
+      "labour_force_total": 484539458,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 80,
+      "year": 2012,
+      "labour_force_total": 476101422,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 81,
+      "year": 2011,
+      "labour_force_total": 471891929,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 82,
+      "year": 2010,
+      "labour_force_total": 467561989,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 83,
+      "year": 2009,
+      "labour_force_total": 464961693,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 84,
+      "year": 2008,
+      "labour_force_total": 462536166,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 85,
+      "year": 2007,
+      "labour_force_total": 460225575,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 86,
+      "year": 2006,
+      "labour_force_total": 457611460,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 87,
+      "year": 2005,
+      "labour_force_total": 454832471,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 88,
+      "year": 2004,
+      "labour_force_total": 445825854,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 89,
+      "year": 2003,
+      "labour_force_total": 436753652,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 90,
+      "year": 2002,
+      "labour_force_total": 427829074,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 91,
+      "year": 2001,
+      "labour_force_total": 418764922,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 92,
+      "year": 2000,
+      "labour_force_total": 409617771,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 93,
+      "year": 1999,
+      "labour_force_total": 397354085,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 94,
+      "year": 1998,
+      "labour_force_total": 385347723,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 95,
+      "year": 1997,
+      "labour_force_total": 373667535,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 96,
+      "year": 1996,
+      "labour_force_total": 362330724,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 97,
+      "year": 1995,
+      "labour_force_total": 351330547,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 98,
+      "year": 1994,
+      "labour_force_total": 340802039,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 99,
+      "year": 1993,
+      "labour_force_total": 332310093,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 100,
+      "year": 1992,
+      "labour_force_total": 323960205,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 101,
+      "year": 1991,
+      "labour_force_total": 315788431,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 102,
+      "year": 1990,
+      "labour_force_total": 307787048,
+      "country_name": "India",
+      "iso_code": "IN"
+    }
+  ]
+}

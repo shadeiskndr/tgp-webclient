@@ -1,0 +1,1054 @@
+{
+  "inflation": [
+    {
+      "id": 1,
+      "year": 2023,
+      "inflation_rate": 2.49,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 2,
+      "year": 2022,
+      "inflation_rate": 3.38,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 3,
+      "year": 2021,
+      "inflation_rate": 2.48,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 4,
+      "year": 2020,
+      "inflation_rate": -1.14,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 5,
+      "year": 2019,
+      "inflation_rate": 0.66,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 6,
+      "year": 2018,
+      "inflation_rate": 0.88,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 7,
+      "year": 2017,
+      "inflation_rate": 3.87,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 8,
+      "year": 2016,
+      "inflation_rate": 2.09,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 9,
+      "year": 2015,
+      "inflation_rate": 2.1,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 10,
+      "year": 2014,
+      "inflation_rate": 3.14,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 11,
+      "year": 2013,
+      "inflation_rate": 2.11,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 12,
+      "year": 2012,
+      "inflation_rate": 1.66,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 13,
+      "year": 2011,
+      "inflation_rate": 3.17,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 14,
+      "year": 2010,
+      "inflation_rate": 1.62,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 15,
+      "year": 2009,
+      "inflation_rate": 0.58,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 16,
+      "year": 2008,
+      "inflation_rate": 5.44,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 17,
+      "year": 2007,
+      "inflation_rate": 2.03,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 18,
+      "year": 2006,
+      "inflation_rate": 3.61,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 19,
+      "year": 2005,
+      "inflation_rate": 2.98,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 20,
+      "year": 2004,
+      "inflation_rate": 1.42,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 21,
+      "year": 2003,
+      "inflation_rate": 1.09,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 22,
+      "year": 2002,
+      "inflation_rate": 1.81,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 23,
+      "year": 2001,
+      "inflation_rate": 1.42,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 24,
+      "year": 2000,
+      "inflation_rate": 1.53,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 25,
+      "year": 1999,
+      "inflation_rate": 2.74,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 26,
+      "year": 1998,
+      "inflation_rate": 5.27,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 27,
+      "year": 1997,
+      "inflation_rate": 2.66,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 28,
+      "year": 1996,
+      "inflation_rate": 3.49,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 29,
+      "year": 1995,
+      "inflation_rate": 3.45,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 30,
+      "year": 1994,
+      "inflation_rate": 3.72,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 31,
+      "year": 1993,
+      "inflation_rate": 3.54,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 32,
+      "year": 1992,
+      "inflation_rate": 4.77,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 33,
+      "year": 1991,
+      "inflation_rate": 4.36,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 34,
+      "year": 1990,
+      "inflation_rate": 2.62,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 35,
+      "year": 1989,
+      "inflation_rate": 2.81,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 36,
+      "year": 1988,
+      "inflation_rate": 2.56,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 37,
+      "year": 1987,
+      "inflation_rate": 0.29,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 38,
+      "year": 1986,
+      "inflation_rate": 0.74,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 39,
+      "year": 1985,
+      "inflation_rate": 0.35,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 40,
+      "year": 1984,
+      "inflation_rate": 3.9,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 41,
+      "year": 1983,
+      "inflation_rate": 3.7,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 42,
+      "year": 1982,
+      "inflation_rate": 5.82,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 43,
+      "year": 1981,
+      "inflation_rate": 9.7,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 44,
+      "year": 1980,
+      "inflation_rate": 6.67,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 45,
+      "year": 1979,
+      "inflation_rate": 3.65,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 46,
+      "year": 1978,
+      "inflation_rate": 4.86,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 47,
+      "year": 1977,
+      "inflation_rate": 4.79,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 48,
+      "year": 1976,
+      "inflation_rate": 2.63,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 49,
+      "year": 1975,
+      "inflation_rate": 4.49,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 50,
+      "year": 1974,
+      "inflation_rate": 17.33,
+      "country_name": "Malaysia",
+      "iso_code": "MY"
+    },
+    {
+      "id": 51,
+      "year": 2023,
+      "inflation_rate": 4.12,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 52,
+      "year": 2022,
+      "inflation_rate": 8,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 53,
+      "year": 2021,
+      "inflation_rate": 4.7,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 54,
+      "year": 2020,
+      "inflation_rate": 1.23,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 55,
+      "year": 2019,
+      "inflation_rate": 1.81,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 56,
+      "year": 2018,
+      "inflation_rate": 2.44,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 57,
+      "year": 2017,
+      "inflation_rate": 2.13,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 58,
+      "year": 2016,
+      "inflation_rate": 1.26,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 59,
+      "year": 2015,
+      "inflation_rate": 0.12,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 60,
+      "year": 2014,
+      "inflation_rate": 1.62,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 61,
+      "year": 2013,
+      "inflation_rate": 1.46,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 62,
+      "year": 2012,
+      "inflation_rate": 2.07,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 63,
+      "year": 2011,
+      "inflation_rate": 3.16,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 64,
+      "year": 2010,
+      "inflation_rate": 1.64,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 65,
+      "year": 2009,
+      "inflation_rate": -0.36,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 66,
+      "year": 2008,
+      "inflation_rate": 3.84,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 67,
+      "year": 2007,
+      "inflation_rate": 2.85,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 68,
+      "year": 2006,
+      "inflation_rate": 3.23,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 69,
+      "year": 2005,
+      "inflation_rate": 3.39,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 70,
+      "year": 2004,
+      "inflation_rate": 2.68,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 71,
+      "year": 2003,
+      "inflation_rate": 2.27,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 72,
+      "year": 2002,
+      "inflation_rate": 1.59,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 73,
+      "year": 2001,
+      "inflation_rate": 2.83,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 74,
+      "year": 2000,
+      "inflation_rate": 3.38,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 75,
+      "year": 1999,
+      "inflation_rate": 2.19,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 76,
+      "year": 1998,
+      "inflation_rate": 1.55,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 77,
+      "year": 1997,
+      "inflation_rate": 2.34,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 78,
+      "year": 1996,
+      "inflation_rate": 2.93,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 79,
+      "year": 1995,
+      "inflation_rate": 2.81,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 80,
+      "year": 1994,
+      "inflation_rate": 2.61,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 81,
+      "year": 1993,
+      "inflation_rate": 2.95,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 82,
+      "year": 1992,
+      "inflation_rate": 3.03,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 83,
+      "year": 1991,
+      "inflation_rate": 4.23,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 84,
+      "year": 1990,
+      "inflation_rate": 5.4,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 85,
+      "year": 1989,
+      "inflation_rate": 4.83,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 86,
+      "year": 1988,
+      "inflation_rate": 4.08,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 87,
+      "year": 1987,
+      "inflation_rate": 3.66,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 88,
+      "year": 1986,
+      "inflation_rate": 1.9,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 89,
+      "year": 1985,
+      "inflation_rate": 3.55,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 90,
+      "year": 1984,
+      "inflation_rate": 4.3,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 91,
+      "year": 1983,
+      "inflation_rate": 3.21,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 92,
+      "year": 1982,
+      "inflation_rate": 6.13,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 93,
+      "year": 1981,
+      "inflation_rate": 10.33,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 94,
+      "year": 1980,
+      "inflation_rate": 13.55,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 95,
+      "year": 1979,
+      "inflation_rate": 11.25,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 96,
+      "year": 1978,
+      "inflation_rate": 7.63,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 97,
+      "year": 1977,
+      "inflation_rate": 6.5,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 98,
+      "year": 1976,
+      "inflation_rate": 5.74,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 99,
+      "year": 1975,
+      "inflation_rate": 9.14,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 100,
+      "year": 1974,
+      "inflation_rate": 11.05,
+      "country_name": "United States",
+      "iso_code": "US"
+    },
+    {
+      "id": 101,
+      "year": 2023,
+      "inflation_rate": 5.65,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 102,
+      "year": 2022,
+      "inflation_rate": 6.7,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 103,
+      "year": 2021,
+      "inflation_rate": 5.13,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 104,
+      "year": 2020,
+      "inflation_rate": 6.62,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 105,
+      "year": 2019,
+      "inflation_rate": 3.73,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 106,
+      "year": 2018,
+      "inflation_rate": 3.94,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 107,
+      "year": 2017,
+      "inflation_rate": 3.33,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 108,
+      "year": 2016,
+      "inflation_rate": 4.95,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 109,
+      "year": 2015,
+      "inflation_rate": 4.91,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 110,
+      "year": 2014,
+      "inflation_rate": 6.67,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 111,
+      "year": 2013,
+      "inflation_rate": 10.02,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 112,
+      "year": 2012,
+      "inflation_rate": 9.48,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 113,
+      "year": 2011,
+      "inflation_rate": 8.91,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 114,
+      "year": 2010,
+      "inflation_rate": 11.99,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 115,
+      "year": 2009,
+      "inflation_rate": 10.88,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 116,
+      "year": 2008,
+      "inflation_rate": 8.35,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 117,
+      "year": 2007,
+      "inflation_rate": 6.37,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 118,
+      "year": 2006,
+      "inflation_rate": 5.8,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 119,
+      "year": 2005,
+      "inflation_rate": 4.25,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 120,
+      "year": 2004,
+      "inflation_rate": 3.77,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 121,
+      "year": 2003,
+      "inflation_rate": 3.81,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 122,
+      "year": 2002,
+      "inflation_rate": 4.3,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 123,
+      "year": 2001,
+      "inflation_rate": 3.78,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 124,
+      "year": 2000,
+      "inflation_rate": 4.01,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 125,
+      "year": 1999,
+      "inflation_rate": 4.67,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 126,
+      "year": 1998,
+      "inflation_rate": 13.23,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 127,
+      "year": 1997,
+      "inflation_rate": 7.16,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 128,
+      "year": 1996,
+      "inflation_rate": 8.98,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 129,
+      "year": 1995,
+      "inflation_rate": 10.22,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 130,
+      "year": 1994,
+      "inflation_rate": 10.25,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 131,
+      "year": 1993,
+      "inflation_rate": 6.33,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 132,
+      "year": 1992,
+      "inflation_rate": 11.79,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 133,
+      "year": 1991,
+      "inflation_rate": 13.87,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 134,
+      "year": 1990,
+      "inflation_rate": 8.97,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 135,
+      "year": 1989,
+      "inflation_rate": 7.07,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 136,
+      "year": 1988,
+      "inflation_rate": 9.38,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 137,
+      "year": 1987,
+      "inflation_rate": 8.8,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 138,
+      "year": 1986,
+      "inflation_rate": 8.73,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 139,
+      "year": 1985,
+      "inflation_rate": 5.56,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 140,
+      "year": 1984,
+      "inflation_rate": 8.32,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 141,
+      "year": 1983,
+      "inflation_rate": 11.87,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 142,
+      "year": 1982,
+      "inflation_rate": 7.89,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 143,
+      "year": 1981,
+      "inflation_rate": 13.11,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 144,
+      "year": 1980,
+      "inflation_rate": 11.35,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 145,
+      "year": 1979,
+      "inflation_rate": 6.28,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 146,
+      "year": 1978,
+      "inflation_rate": 2.52,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 147,
+      "year": 1977,
+      "inflation_rate": 8.31,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 148,
+      "year": 1976,
+      "inflation_rate": -7.63,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 149,
+      "year": 1975,
+      "inflation_rate": 5.75,
+      "country_name": "India",
+      "iso_code": "IN"
+    },
+    {
+      "id": 150,
+      "year": 1974,
+      "inflation_rate": 28.6,
+      "country_name": "India",
+      "iso_code": "IN"
+    }
+  ]
+}

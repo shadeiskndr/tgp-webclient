@@ -1,47 +1,33 @@
 import axios from "axios";
 import apiClient from "./api.service";
 
-// Define types for the API responses
-export interface GDPData {
+// Data category enum (matches backend)
+export enum DataCategory {
+  GDP = "gdp",
+  POPULATION = "population",
+  EDUCATION = "education",
+  INFLATION = "inflation",
+  LABOUR = "labour",
+}
+
+// Common data response interface matching API response
+export interface EconomicDataResponse<T> {
+  data: T[];
+  total: number;
+  limit: number;
+  offset: number;
+}
+
+// Generic economic data item
+export interface EconomicDataItem {
   id: number;
   year: number;
-  gdp_growth_rate: number;
+  value: number;
   country_name: string;
   iso_code: string;
 }
 
-export interface PopulationGrowthData {
-  id: number;
-  year: number;
-  population_growth_rate: number;
-  country_name: string;
-  iso_code: string;
-}
-
-export interface EducationExpenditureData {
-  id: number;
-  year: number;
-  expenditure_percentage: number;
-  country_name: string;
-  iso_code: string;
-}
-
-export interface InflationData {
-  id: number;
-  year: number;
-  inflation_rate: number;
-  country_name: string;
-  iso_code: string;
-}
-
-export interface LabourForceData {
-  id: number;
-  year: number;
-  labour_force_total: number;
-  country_name: string;
-  iso_code: string;
-}
-
+// Auth interfaces
 export interface LoginRequest {
   username: string;
   password: string;
@@ -50,11 +36,16 @@ export interface LoginRequest {
 export interface LoginResponse {
   access_token: string;
   token_type: string;
+  expires_at: number;
+}
+
+export interface UserInfo {
+  username: string;
 }
 
 // Create a separate instance for login requests (without auth headers)
 const authClient = axios.create({
-  baseURL: "/api",
+  baseURL: "/api/auth",
   headers: {
     "Content-Type": "application/json",
   },
@@ -62,82 +53,119 @@ const authClient = axios.create({
 
 // Economic data service
 const EconomicDataService = {
-  // Login function - uses authClient without token
+  // Auth functions
   login: async (username: string, password: string) => {
     const response = await authClient.post<LoginResponse>("/login", {
       username,
       password,
     });
+
+    // Store token and expiration time
+    localStorage.setItem("access_token", response.data.access_token);
+    localStorage.setItem("token_expires", response.data.expires_at.toString());
+
     return response.data;
   },
 
-  // GDP data - uses apiClient with token
-  getGDP: async (country?: string) => {
-    const params = country ? { country } : {};
-    const response = await apiClient.get<{ gdp: GDPData[] }>("/gdp", {
-      params,
-    });
+  logout: () => {
+    localStorage.removeItem("access_token");
+    localStorage.removeItem("token_expires");
+  },
+
+  getCurrentUser: async () => {
+    const response = await apiClient.get<UserInfo>("/auth/me");
     return response.data;
   },
 
-  // Population growth data
-  getPopulationGrowth: async (country?: string) => {
-    const params = country ? { country } : {};
-    const response = await apiClient.get<{
-      population: PopulationGrowthData[];
-    }>("/population_growth", { params });
+  // Economic data functions - use standardized data fetching
+  getEconomicData: async (
+    category: DataCategory,
+    params?: {
+      country?: string;
+      year?: number;
+      limit?: number;
+      offset?: number;
+    }
+  ) => {
+    const response = await apiClient.get<
+      EconomicDataResponse<EconomicDataItem>
+    >(`/data/${category}`, { params });
     return response.data;
   },
 
-  // Education expenditure data
-  getEducationExpenditure: async (country?: string) => {
-    const params = country ? { country } : {};
-    const response = await apiClient.get<{
-      education_expenditure: EducationExpenditureData[];
-    }>("/education_expenditure", { params });
-    return response.data;
+  // Convenience methods for specific data types
+  getGDP: async (params?: {
+    country?: string;
+    year?: number;
+    limit?: number;
+    offset?: number;
+  }) => {
+    return EconomicDataService.getEconomicData(DataCategory.GDP, params);
   },
 
-  // Inflation data
-  getInflation: async (country?: string) => {
-    const params = country ? { country } : {};
-    const response = await apiClient.get<{ inflation: InflationData[] }>(
-      "/inflation",
-      { params }
-    );
-    return response.data;
+  getPopulationGrowth: async (params?: {
+    country?: string;
+    year?: number;
+    limit?: number;
+    offset?: number;
+  }) => {
+    return EconomicDataService.getEconomicData(DataCategory.POPULATION, params);
   },
 
-  // Labour force data
-  getLabourForce: async (country?: string) => {
-    const params = country ? { country } : {};
-    const response = await apiClient.get<{ labour_force: LabourForceData[] }>(
-      "/labour_force",
-      { params }
-    );
-    return response.data;
+  getEducationExpenditure: async (params?: {
+    country?: string;
+    year?: number;
+    limit?: number;
+    offset?: number;
+  }) => {
+    return EconomicDataService.getEconomicData(DataCategory.EDUCATION, params);
   },
 
-  // Get all economic data for a country
-  getAllEconomicData: async (country?: string) => {
-    const params = country ? { country } : {};
+  getInflation: async (params?: {
+    country?: string;
+    year?: number;
+    limit?: number;
+    offset?: number;
+  }) => {
+    return EconomicDataService.getEconomicData(DataCategory.INFLATION, params);
+  },
+
+  getLabourForce: async (params?: {
+    country?: string;
+    year?: number;
+    limit?: number;
+    offset?: number;
+  }) => {
+    return EconomicDataService.getEconomicData(DataCategory.LABOUR, params);
+  },
+
+  // Get all economic data for a country (batched requests)
+  getAllEconomicData: async (country?: string, year?: number) => {
+    const params = { country, year };
 
     const [gdpData, populationData, educationData, inflationData, labourData] =
       await Promise.all([
-        apiClient.get("/gdp", { params }),
-        apiClient.get("/population_growth", { params }),
-        apiClient.get("/education_expenditure", { params }),
-        apiClient.get("/inflation", { params }),
-        apiClient.get("/labour_force", { params }),
+        EconomicDataService.getGDP(params),
+        EconomicDataService.getPopulationGrowth(params),
+        EconomicDataService.getEducationExpenditure(params),
+        EconomicDataService.getInflation(params),
+        EconomicDataService.getLabourForce(params),
       ]);
 
     return {
-      gdp: gdpData.data,
-      populationGrowth: populationData.data,
-      educationExpenditure: educationData.data,
-      inflation: inflationData.data,
-      labourForce: labourData.data,
+      gdp: gdpData,
+      populationGrowth: populationData,
+      educationExpenditure: educationData,
+      inflation: inflationData,
+      labourForce: labourData,
     };
+  },
+
+  // Health check
+  healthCheck: async () => {
+    // Using axios directly as this doesn't need auth
+    const response = await axios.get("/health");
+    return response.data;
   },
 };
 

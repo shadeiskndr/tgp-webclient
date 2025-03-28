@@ -16,12 +16,19 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import Button from "@mui/material/Button";
 import { Dayjs } from "dayjs";
 import EconomicDataService, {
-  GDPData,
+  EconomicDataItem,
 } from "../services/economic-data.service";
 
 export default function GdpGrowth() {
-  const [data, setData] = useState<GDPData[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  // Table data state
+  const [tableData, setTableData] = useState<EconomicDataItem[]>([]);
+  const [tableLoading, setTableLoading] = useState<boolean>(true);
+  const [totalCount, setTotalCount] = useState<number>(0);
+
+  // Chart data state (separate from table data)
+  const [chartData, setChartData] = useState<EconomicDataItem[]>([]);
+  const [chartLoading, setChartLoading] = useState<boolean>(true);
+
   const [error, setError] = useState<string | null>(null);
 
   // Filtering states
@@ -38,15 +45,68 @@ export default function GdpGrowth() {
     { code: string; name: string }[]
   >([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const response = await EconomicDataService.getGDP();
-        setData(response.gdp || []);
+  // Fetch chart data - only filtered by country, no pagination
+  const fetchChartData = async () => {
+    try {
+      setChartLoading(true);
 
-        // Extract unique countries from the data
-        const countries = response.gdp.reduce(
+      // Only filter by country for the chart data
+      const params = {
+        country: selectedCountry,
+      };
+
+      const response = await EconomicDataService.getGDP(params);
+
+      // Sort data by year for the chart
+      const sortedData = [...response.data].sort((a, b) => a.year - b.year);
+      setChartData(sortedData);
+    } catch (err) {
+      setError("Failed to load GDP growth chart data");
+      console.error(err);
+    } finally {
+      setChartLoading(false);
+    }
+  };
+
+  // Fetch table data with current filters and pagination
+  const fetchTableData = async (resetPage = false) => {
+    try {
+      setTableLoading(true);
+
+      // Build filter parameters for table data
+      const params: any = {
+        country: selectedCountry,
+        limit: rowsPerPage,
+        offset: resetPage ? 0 : page * rowsPerPage,
+      };
+
+      // Only add year filter if a specific year is selected
+      if (startYear && endYear) {
+        // For date range, we'll filter client-side since the API only supports single year
+        params.year = null;
+      } else if (startYear) {
+        params.year = startYear.year();
+      } else if (endYear) {
+        params.year = endYear.year();
+      }
+
+      const response = await EconomicDataService.getGDP(params);
+
+      // Update state with the response data
+      setTableData(response.data);
+      setTotalCount(response.total);
+
+      if (resetPage) {
+        setPage(0);
+      }
+
+      // Extract unique countries if this is the first load
+      if (availableCountries.length === 0) {
+        // Fetch all countries (separate request with higher limit)
+        const allCountriesResponse = await EconomicDataService.getGDP({
+          limit: 1000,
+        });
+        const countries = allCountriesResponse.data.reduce(
           (acc: { code: string; name: string }[], item) => {
             if (!acc.some((c) => c.code === item.iso_code)) {
               acc.push({ code: item.iso_code, name: item.country_name });
@@ -56,46 +116,52 @@ export default function GdpGrowth() {
           []
         );
         setAvailableCountries(countries);
-      } catch (err) {
-        setError("Failed to load GDP growth data");
-        console.error(err);
-      } finally {
-        setLoading(false);
       }
-    };
+    } catch (err) {
+      setError("Failed to load GDP growth table data");
+      console.error(err);
+    } finally {
+      setTableLoading(false);
+    }
+  };
 
-    fetchData();
+  // Initial data load
+  useEffect(() => {
+    fetchTableData(true);
+    fetchChartData();
   }, []);
 
-  // Filter data based on selected country and date range
-  const filteredData = useMemo(() => {
-    return data.filter((item) => {
-      // Filter by country
-      const countryMatch = selectedCountry
-        ? item.iso_code === selectedCountry
-        : true;
+  // Reload chart data when country changes
+  useEffect(() => {
+    fetchChartData();
+  }, [selectedCountry]);
 
-      // Filter by date range
+  // Reload table data when country changes
+  useEffect(() => {
+    fetchTableData(true);
+  }, [selectedCountry]);
+
+  // Reload table data on pagination changes
+  useEffect(() => {
+    fetchTableData(false);
+  }, [page, rowsPerPage]);
+
+  // Filter table data based on selected date range (client-side filtering for date ranges)
+  const filteredTableData = useMemo(() => {
+    return tableData.filter((item) => {
+      // Filter by date range (if both are specified)
       const yearMatch =
         (!startYear || item.year >= startYear.year()) &&
         (!endYear || item.year <= endYear.year());
 
-      return countryMatch && yearMatch;
+      return yearMatch;
     });
-  }, [data, selectedCountry, startYear, endYear]);
+  }, [tableData, startYear, endYear]);
 
-  // Sort data by year for proper display
-  const sortedData = useMemo(() => {
-    return [...filteredData].sort((a, b) => a.year - b.year);
-  }, [filteredData]);
-
-  // Paginated data for the table
-  const paginatedData = useMemo(() => {
-    return sortedData.slice(
-      page * rowsPerPage,
-      page * rowsPerPage + rowsPerPage
-    );
-  }, [sortedData, page, rowsPerPage]);
+  // Sort table data by year for proper display
+  const sortedTableData = useMemo(() => {
+    return [...filteredTableData].sort((a, b) => b.year - a.year);
+  }, [filteredTableData]);
 
   // Handle pagination changes
   const handleChangePage = (
@@ -112,12 +178,18 @@ export default function GdpGrowth() {
     setPage(0);
   };
 
+  // Apply date filters
+  const handleApplyFilters = () => {
+    fetchTableData(true);
+  };
+
   // Reset filters
   const handleResetFilters = () => {
     setSelectedCountry("MY");
     setStartYear(null);
     setEndYear(null);
-    setPage(0);
+    fetchTableData(true);
+    fetchChartData();
   };
 
   return (
@@ -126,7 +198,8 @@ export default function GdpGrowth() {
         GDP Growth (Annual %) Analysis
       </Typography>
 
-      {loading ? (
+      {(tableLoading && tableData.length === 0) ||
+      (chartLoading && chartData.length === 0) ? (
         <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
           <CircularProgress />
         </Box>
@@ -210,10 +283,18 @@ export default function GdpGrowth() {
               >
                 <Button
                   variant="outlined"
+                  onClick={handleApplyFilters}
+                  sx={{ mr: 1 }}
+                  fullWidth
+                >
+                  Apply Filters
+                </Button>
+                <Button
+                  variant="outlined"
                   onClick={handleResetFilters}
                   fullWidth
                 >
-                  Reset Filters
+                  Reset
                 </Button>
               </Grid>
             </Grid>
@@ -234,11 +315,22 @@ export default function GdpGrowth() {
                   borderColor: "divider",
                 }}
               >
-                {sortedData.length > 0 ? (
+                {chartLoading ? (
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "100%",
+                    }}
+                  >
+                    <CircularProgress />
+                  </Box>
+                ) : chartData.length > 0 ? (
                   <LineChart
                     series={[
                       {
-                        data: sortedData.map((item) => item.gdp_growth_rate),
+                        data: chartData.map((item) => item.value),
                         label: `GDP Growth Rate (Annual %) - ${
                           availableCountries.find(
                             (c) => c.code === selectedCountry
@@ -249,7 +341,7 @@ export default function GdpGrowth() {
                     ]}
                     xAxis={[
                       {
-                        data: sortedData.map((item) => item.year),
+                        data: chartData.map((item) => item.year),
                         scaleType: "point",
                         label: "Year",
                         valueFormatter: (value) => value.toString(),
@@ -268,7 +360,7 @@ export default function GdpGrowth() {
                     }}
                   >
                     <Typography color="text.secondary">
-                      No GDP growth data available for the selected filters
+                      No GDP growth data available for the selected country
                     </Typography>
                   </Box>
                 )}
@@ -290,6 +382,14 @@ export default function GdpGrowth() {
                   borderColor: "divider",
                 }}
               >
+                {tableLoading && (
+                  <Box
+                    sx={{ display: "flex", justifyContent: "center", my: 2 }}
+                  >
+                    <CircularProgress size={30} />
+                  </Box>
+                )}
+
                 <Box sx={{ overflowX: "auto" }}>
                   <table style={{ width: "100%", borderCollapse: "collapse" }}>
                     <thead>
@@ -324,7 +424,7 @@ export default function GdpGrowth() {
                       </tr>
                     </thead>
                     <tbody>
-                      {paginatedData.map((item) => (
+                      {sortedTableData.map((item) => (
                         <tr key={item.id}>
                           <td
                             style={{
@@ -349,7 +449,7 @@ export default function GdpGrowth() {
                               borderBottom: "1px solid rgba(224, 224, 224, 1)",
                             }}
                           >
-                            {item.gdp_growth_rate.toFixed(2)}%
+                            {item.value.toFixed(2)}%
                           </td>
                         </tr>
                       ))}
@@ -358,7 +458,7 @@ export default function GdpGrowth() {
                 </Box>
                 <TablePagination
                   component="div"
-                  count={sortedData.length}
+                  count={totalCount}
                   page={page}
                   onPageChange={handleChangePage}
                   rowsPerPage={rowsPerPage}

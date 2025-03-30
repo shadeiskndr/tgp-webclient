@@ -43,6 +43,15 @@ export interface UserInfo {
   username: string;
 }
 
+interface EconomicDataParams {
+  country?: string;
+  year?: number;
+  yearFrom?: number; // Add year range support
+  yearTo?: number; // Add year range support
+  limit?: number;
+  offset?: number;
+}
+
 // Create a separate instance for login requests (without auth headers)
 const authClient = axios.create({
   baseURL: "/api/auth",
@@ -80,62 +89,41 @@ const EconomicDataService = {
   // Economic data functions - use standardized data fetching
   getEconomicData: async (
     category: DataCategory,
-    params?: {
-      country?: string;
-      year?: number;
-      limit?: number;
-      offset?: number;
-    }
+    params?: EconomicDataParams
   ) => {
     const response = await apiClient.get<
       EconomicDataResponse<EconomicDataItem>
-    >(`/data/${category}`, { params });
+    >(`/data/${category}`, {
+      params: {
+        country: params?.country,
+        year: params?.year,
+        year_from: params?.yearFrom,
+        year_to: params?.yearTo,
+        limit: params?.limit,
+        offset: params?.offset,
+      },
+    });
     return response.data;
   },
 
   // Convenience methods for specific data types
-  getGDP: async (params?: {
-    country?: string;
-    year?: number;
-    limit?: number;
-    offset?: number;
-  }) => {
+  getGDP: async (params?: EconomicDataParams) => {
     return EconomicDataService.getEconomicData(DataCategory.GDP, params);
   },
 
-  getPopulationGrowth: async (params?: {
-    country?: string;
-    year?: number;
-    limit?: number;
-    offset?: number;
-  }) => {
+  getPopulationGrowth: async (params?: EconomicDataParams) => {
     return EconomicDataService.getEconomicData(DataCategory.POPULATION, params);
   },
 
-  getEducationExpenditure: async (params?: {
-    country?: string;
-    year?: number;
-    limit?: number;
-    offset?: number;
-  }) => {
+  getEducationExpenditure: async (params?: EconomicDataParams) => {
     return EconomicDataService.getEconomicData(DataCategory.EDUCATION, params);
   },
 
-  getInflation: async (params?: {
-    country?: string;
-    year?: number;
-    limit?: number;
-    offset?: number;
-  }) => {
+  getInflation: async (params?: EconomicDataParams) => {
     return EconomicDataService.getEconomicData(DataCategory.INFLATION, params);
   },
 
-  getLabourForce: async (params?: {
-    country?: string;
-    year?: number;
-    limit?: number;
-    offset?: number;
-  }) => {
+  getLabourForce: async (params?: EconomicDataParams) => {
     return EconomicDataService.getEconomicData(DataCategory.LABOUR, params);
   },
 

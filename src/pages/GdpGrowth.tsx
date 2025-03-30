@@ -50,9 +50,12 @@ export default function GdpGrowth() {
     try {
       setChartLoading(true);
 
-      // Only filter by country for the chart data
+      // Filter by country and year range for chart data
       const params = {
         country: selectedCountry,
+        yearFrom: startYear ? startYear.year() : undefined,
+        yearTo: endYear ? endYear.year() : undefined,
+        limit: 1000, // Get all data for the selected country and year range
       };
 
       const response = await EconomicDataService.getGDP(params);
@@ -76,19 +79,11 @@ export default function GdpGrowth() {
       // Build filter parameters for table data
       const params: any = {
         country: selectedCountry,
+        yearFrom: startYear ? startYear.year() : undefined,
+        yearTo: endYear ? endYear.year() : undefined,
         limit: rowsPerPage,
         offset: resetPage ? 0 : page * rowsPerPage,
       };
-
-      // Only add year filter if a specific year is selected
-      if (startYear && endYear) {
-        // For date range, we'll filter client-side since the API only supports single year
-        params.year = null;
-      } else if (startYear) {
-        params.year = startYear.year();
-      } else if (endYear) {
-        params.year = endYear.year();
-      }
 
       const response = await EconomicDataService.getGDP(params);
 
@@ -134,7 +129,7 @@ export default function GdpGrowth() {
   // Reload chart data when country changes
   useEffect(() => {
     fetchChartData();
-  }, [selectedCountry]);
+  }, [selectedCountry, startYear, endYear]);
 
   // Reload table data when country changes
   useEffect(() => {
@@ -181,6 +176,7 @@ export default function GdpGrowth() {
   // Apply date filters
   const handleApplyFilters = () => {
     fetchTableData(true);
+    fetchChartData();
   };
 
   // Reset filters

@@ -27,6 +27,11 @@ export interface EconomicDataItem {
   iso_code: string;
 }
 
+export interface Country {
+  code: string;
+  name: string;
+}
+
 // Auth interfaces
 export interface LoginRequest {
   username: string;
@@ -84,6 +89,13 @@ const EconomicDataService = {
   getCurrentUser: async () => {
     const response = await apiClient.get<UserInfo>("/auth/me");
     return response.data;
+  },
+
+  getCountries: async () => {
+    const response = await apiClient.get<EconomicDataResponse<Country>>(
+      "/data/countries"
+    );
+    return response.data.data;
   },
 
   // Economic data functions - use standardized data fetching

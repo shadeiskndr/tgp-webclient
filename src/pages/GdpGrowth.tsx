@@ -17,6 +17,7 @@ import Button from "@mui/material/Button";
 import { Dayjs } from "dayjs";
 import EconomicDataService, {
   EconomicDataItem,
+  Country,
 } from "../services/economic-data.service";
 
 export default function GdpGrowth() {
@@ -41,9 +42,26 @@ export default function GdpGrowth() {
   const [rowsPerPage, setRowsPerPage] = useState(5);
 
   // Available countries from the data
-  const [availableCountries, setAvailableCountries] = useState<
-    { code: string; name: string }[]
-  >([]);
+  const [availableCountries, setAvailableCountries] = useState<Country[]>([]);
+  const [countriesLoading, setCountriesLoading] = useState<boolean>(true);
+
+  // Fetch countries separately
+  useEffect(() => {
+    const fetchCountries = async () => {
+      try {
+        setCountriesLoading(true);
+        const countries = await EconomicDataService.getCountries();
+        setAvailableCountries(countries);
+      } catch (err) {
+        setError("Failed to load country list");
+        console.error(err);
+      } finally {
+        setCountriesLoading(false);
+      }
+    };
+
+    fetchCountries();
+  }, []);
 
   // Fetch chart data - only filtered by country, no pagination
   const fetchChartData = async () => {
@@ -94,24 +112,6 @@ export default function GdpGrowth() {
       if (resetPage) {
         setPage(0);
       }
-
-      // Extract unique countries if this is the first load
-      if (availableCountries.length === 0) {
-        // Fetch all countries (separate request with higher limit)
-        const allCountriesResponse = await EconomicDataService.getGDP({
-          limit: 1000,
-        });
-        const countries = allCountriesResponse.data.reduce(
-          (acc: { code: string; name: string }[], item) => {
-            if (!acc.some((c) => c.code === item.iso_code)) {
-              acc.push({ code: item.iso_code, name: item.country_name });
-            }
-            return acc;
-          },
-          []
-        );
-        setAvailableCountries(countries);
-      }
     } catch (err) {
       setError("Failed to load GDP growth table data");
       console.error(err);
@@ -126,37 +126,15 @@ export default function GdpGrowth() {
     fetchChartData();
   }, []);
 
-  // Reload chart data when country changes
-  useEffect(() => {
-    fetchChartData();
-  }, [selectedCountry, startYear, endYear]);
-
-  // Reload table data when country changes
-  useEffect(() => {
-    fetchTableData(true);
-  }, [selectedCountry]);
-
   // Reload table data on pagination changes
   useEffect(() => {
     fetchTableData(false);
   }, [page, rowsPerPage]);
 
-  // Filter table data based on selected date range (client-side filtering for date ranges)
-  const filteredTableData = useMemo(() => {
-    return tableData.filter((item) => {
-      // Filter by date range (if both are specified)
-      const yearMatch =
-        (!startYear || item.year >= startYear.year()) &&
-        (!endYear || item.year <= endYear.year());
-
-      return yearMatch;
-    });
-  }, [tableData, startYear, endYear]);
-
   // Sort table data by year for proper display
   const sortedTableData = useMemo(() => {
-    return [...filteredTableData].sort((a, b) => b.year - a.year);
-  }, [filteredTableData]);
+    return [...tableData].sort((a, b) => b.year - a.year);
+  }, [tableData]);
 
   // Handle pagination changes
   const handleChangePage = (
@@ -184,8 +162,11 @@ export default function GdpGrowth() {
     setSelectedCountry("MY");
     setStartYear(null);
     setEndYear(null);
-    fetchTableData(true);
-    fetchChartData();
+    // Fetch data after resetting filters
+    setTimeout(() => {
+      fetchTableData(true);
+      fetchChartData();
+    }, 0);
   };
 
   return (
@@ -195,7 +176,8 @@ export default function GdpGrowth() {
       </Typography>
 
       {(tableLoading && tableData.length === 0) ||
-      (chartLoading && chartData.length === 0) ? (
+      (chartLoading && chartData.length === 0) ||
+      countriesLoading ? (
         <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
           <CircularProgress />
         </Box>

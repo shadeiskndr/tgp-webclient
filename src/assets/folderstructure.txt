@@ -1,19 +1,50 @@
-./public
-./src
-./src/assets
-./src/components
-./src/components/internals
-./src/components/internals/custom-component
-./src/components/internals/data
-./src/components/mui-component
-./src/components/shared-theme
-./src/components/shared-theme/customizations
-./src/components/theme
-./src/components/theme/customizations
-./src/context
-./src/hooks
-./src/pages
-./src/services
-./src/styles
-./src/types
-./src/utils
+src
+├── App.tsx
+├── assets
+│   ├── folderstructure.txt
+│   └── paynet.png
+├── components
+│   ├── internals
+│   │   ├── EconomicDataChart.tsx
+│   │   ├── EconomicDataFilters.tsx
+│   │   ├── EconomicDataTable.tsx
+│   │   └── LoadingErrorState.tsx
+│   ├── mui-component
+│   │   ├── AppNavbar.tsx
+│   │   ├── MenuButton.tsx
+│   │   ├── MenuContent.tsx
+│   │   ├── OptionsMenu.tsx
+│   │   ├── SideMenu.tsx
+│   │   └── SideMenuMobile.tsx
+│   ├── ProtectedRoute.tsx
+│   └── shared-theme
+│       ├── AppTheme.tsx
+│       ├── ColorModeIconDropdown.tsx
+│       ├── ColorModeSelect.tsx
+│       ├── customizations
+│       │   ├── dataDisplay.tsx
+│       │   ├── feedback.tsx
+│       │   ├── inputs.tsx
+│       │   ├── navigation.tsx
+│       │   └── surfaces.ts
+│       └── themePrimitives.ts
+├── context
+│   └── AuthContext.tsx
+├── hooks
+│   └── useEconomicData.ts
+├── main.tsx
+├── pages
+│   ├── Dashboard.tsx
+│   ├── EducationExpenditure.tsx
+│   ├── GdpGrowth.tsx
+│   ├── Inflation.tsx
+│   ├── LaborForce.tsx
+│   ├── Login.tsx
+│   └── PopulationGrowth.tsx
+├── services
+│   ├── api.service.ts
+│   └── economic-data.service.ts
+├── styles
+├── types
+├── utils
+└── vite-env.d.ts

@@ -1,4 +1,5 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import EconomicDataFilters from "../components/internals/EconomicDataFilters";
 import EconomicDataChart from "../components/internals/EconomicDataChart";
 import EconomicDataTable from "../components/internals/EconomicDataTable";
@@ -17,6 +18,7 @@ export default function GdpGrowth() {
     error,
     selectedCountry,
     setSelectedCountry,
+    appliedCountry,
     startYear,
     setStartYear,
     endYear,
@@ -56,12 +58,12 @@ export default function GdpGrowth() {
             onResetFilters={handleResetFilters}
           />
 
-          <Grid container spacing={2} columns={12} sx={{ mb: 4 }}>
-            <Grid xs={12}>
+          <Grid container spacing={0} columns={12} sx={{ mb: 4 }}>
+            <Grid size={12}>
               <EconomicDataChart
                 chartData={chartData}
                 chartLoading={chartLoading}
-                selectedCountry={selectedCountry}
+                selectedCountry={appliedCountry}
                 availableCountries={availableCountries}
                 title="GDP Growth Trends"
                 yAxisLabel="GDP Growth Rate (Annual %)"
@@ -69,8 +71,8 @@ export default function GdpGrowth() {
             </Grid>
           </Grid>
 
-          <Grid container spacing={2} columns={12}>
-            <Grid xs={12}>
+          <Grid container spacing={0} columns={12}>
+            <Grid size={12}>
               <EconomicDataTable
                 tableData={tableData}
                 tableLoading={tableLoading}

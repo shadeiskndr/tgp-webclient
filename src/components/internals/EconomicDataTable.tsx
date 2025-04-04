@@ -22,6 +22,7 @@ interface EconomicDataTableProps {
   ) => void;
   title: string;
   valueLabel?: string;
+  isPercentage?: boolean;
 }
 
 export default function EconomicDataTable({
@@ -34,8 +35,14 @@ export default function EconomicDataTable({
   handleChangeRowsPerPage,
   title,
   valueLabel = "Value",
+  isPercentage = true,
 }: EconomicDataTableProps) {
   const sortedTableData = [...tableData].sort((a, b) => b.year - a.year);
+
+  // Define formatting options based on isPercentage
+  const numberFormatOptions: Intl.NumberFormatOptions = isPercentage
+    ? { maximumFractionDigits: 2, minimumFractionDigits: 2 } // Force 2 decimals for percentages
+    : { maximumFractionDigits: 0 }; // Allow 0 decimals for non-percentages (like totals)
 
   return (
     <>
@@ -116,7 +123,8 @@ export default function EconomicDataTable({
                       borderBottom: "1px solid rgba(224, 224, 224, 1)",
                     }}
                   >
-                    {item.value.toFixed(2)}%
+                    {item.value.toLocaleString(undefined, numberFormatOptions)}
+                    {isPercentage && "%"}
                   </td>
                 </tr>
               ))}

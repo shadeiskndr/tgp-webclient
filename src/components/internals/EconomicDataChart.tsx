@@ -61,6 +61,7 @@ export default function EconomicDataChart({
                 color: "hsl(120, 70%, 50%)",
                 curve: "catmullRom",
                 showMark: false,
+                area: true,
               },
             ]}
             xAxis={[
@@ -72,7 +73,7 @@ export default function EconomicDataChart({
               },
             ]}
             height={450}
-            margin={{ top: 50, right: 50, bottom: 40, left: 50 }}
+            margin={{ top: 60, right: 30, bottom: 45, left: 70 }}
             slotProps={{
               legend: {
                 direction: "row",

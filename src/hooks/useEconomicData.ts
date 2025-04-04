@@ -3,14 +3,17 @@ import { Dayjs } from "dayjs";
 import EconomicDataService, {
   EconomicDataItem,
   Country,
+  DataCategory,
 } from "../services/economic-data.service";
 
 interface UseEconomicDataProps {
   initialCountry?: string;
+  dataCategory?: DataCategory;
 }
 
 export default function useEconomicData({
   initialCountry = "MY",
+  dataCategory = DataCategory.GDP,
 }: UseEconomicDataProps = {}) {
   // Table data state
   const [tableData, setTableData] = useState<EconomicDataItem[]>([]);
@@ -26,6 +29,7 @@ export default function useEconomicData({
   // Filtering states
   const [selectedCountry, setSelectedCountry] =
     useState<string>(initialCountry);
+  const [appliedCountry, setAppliedCountry] = useState<string>(initialCountry);
   const [startYear, setStartYear] = useState<Dayjs | null>(null);
   const [endYear, setEndYear] = useState<Dayjs | null>(null);
 
@@ -60,21 +64,23 @@ export default function useEconomicData({
     try {
       setChartLoading(true);
 
-      // Filter by country and year range for chart data
       const params = {
         country: selectedCountry,
         yearFrom: startYear ? startYear.year() : undefined,
         yearTo: endYear ? endYear.year() : undefined,
-        limit: 1000, // Get all data for the selected country and year range
+        limit: 1000,
       };
 
-      const response = await EconomicDataService.getGDP(params);
+      const response = await EconomicDataService.getEconomicData(
+        dataCategory,
+        params
+      );
 
       // Sort data by year for the chart
       const sortedData = [...response.data].sort((a, b) => a.year - b.year);
       setChartData(sortedData);
     } catch (err) {
-      setError("Failed to load GDP growth chart data");
+      setError(`Failed to load ${dataCategory} chart data`);
       console.error(err);
     } finally {
       setChartLoading(false);
@@ -86,8 +92,7 @@ export default function useEconomicData({
     try {
       setTableLoading(true);
 
-      // Build filter parameters for table data
-      const params: any = {
+      const params = {
         country: selectedCountry,
         yearFrom: startYear ? startYear.year() : undefined,
         yearTo: endYear ? endYear.year() : undefined,
@@ -95,9 +100,11 @@ export default function useEconomicData({
         offset: resetPage ? 0 : page * rowsPerPage,
       };
 
-      const response = await EconomicDataService.getGDP(params);
+      const response = await EconomicDataService.getEconomicData(
+        dataCategory,
+        params
+      );
 
-      // Update state with the response data
       setTableData(response.data);
       setTotalCount(response.total);
 
@@ -105,7 +112,7 @@ export default function useEconomicData({
         setPage(0);
       }
     } catch (err) {
-      setError("Failed to load GDP growth table data");
+      setError(`Failed to load ${dataCategory} table data`);
       console.error(err);
     } finally {
       setTableLoading(false);
@@ -140,6 +147,7 @@ export default function useEconomicData({
 
   // Apply date filters
   const handleApplyFilters = () => {
+    setAppliedCountry(selectedCountry);
     fetchTableData(true);
     fetchChartData();
   };
@@ -147,6 +155,7 @@ export default function useEconomicData({
   // Reset filters
   const handleResetFilters = () => {
     setSelectedCountry(initialCountry);
+    setAppliedCountry(initialCountry);
     setStartYear(null);
     setEndYear(null);
     // Fetch data after resetting filters
@@ -174,6 +183,7 @@ export default function useEconomicData({
     // Filter states
     selectedCountry,
     setSelectedCountry,
+    appliedCountry,
     startYear,
     setStartYear,
     endYear,

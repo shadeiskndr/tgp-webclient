@@ -1,14 +1,6 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { LoginResponse } from "../services/economic-data.service";
-
-interface AuthContextType {
-  isAuthenticated: boolean;
-  token: string | null;
-  login: (tokenData: LoginResponse) => void;
-  logout: () => void;
-}
-
-const AuthContext = createContext<AuthContextType | undefined>(undefined);
+import { AuthContext } from "../types/authContextTypes";
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
@@ -41,12 +33,4 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
-};
-
-export const useAuth = (): AuthContextType => {
-  const context = useContext(AuthContext);
-  if (context === undefined) {
-    throw new Error("useAuth must be used within an AuthProvider");
-  }
-  return context;
 };

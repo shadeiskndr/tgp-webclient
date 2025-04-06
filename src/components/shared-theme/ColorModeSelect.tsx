@@ -14,7 +14,7 @@ export default function ColorModeSelect(props: SelectProps) {
         setMode(event.target.value as "system" | "light" | "dark")
       }
       SelectDisplayProps={{
-        // @ts-expect-error
+        // @ts-expect-error to eliminate eslint error
         "data-screenshot": "toggle-mode",
       }}
       {...props}

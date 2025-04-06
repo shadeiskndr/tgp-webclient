@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-import EconomicDataService from "../services/economic-data.service";
+import EconomicDataService, {
+  EconomicDataResponse,
+  EconomicDataItem,
+} from "../services/economic-data.service";
 
 // Define types for dashboard data
 export interface CountryData {
@@ -9,6 +12,14 @@ export interface CountryData {
   inflation: number | null;
   labour: number | null;
   year: number;
+}
+
+interface AllEconomicData {
+  gdp: EconomicDataResponse<EconomicDataItem>;
+  populationGrowth: EconomicDataResponse<EconomicDataItem>;
+  educationExpenditure: EconomicDataResponse<EconomicDataItem>;
+  inflation: EconomicDataResponse<EconomicDataItem>;
+  labourForce: EconomicDataResponse<EconomicDataItem>;
 }
 
 export interface DashboardState {
@@ -73,7 +84,9 @@ export const useEconomicDashboard = (
 
           // Extract available years
           const yearSet = new Set<number>();
-          allGdpData.forEach((item: any) => yearSet.add(item.year));
+          allGdpData.forEach((item: EconomicDataItem) =>
+            yearSet.add(item.year)
+          );
           years = Array.from(yearSet).sort((a, b) => b - a); // Sort descending
         }
 
@@ -102,30 +115,31 @@ export const useEconomicDashboard = (
     };
 
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [country1, country2, country3]);
 
   // Process the raw API data into a format suitable for visualization
-  const processCountryData = (data: any): CountryData[] => {
+  const processCountryData = (data: AllEconomicData): CountryData[] => {
     // Get all unique years across all datasets
     const allYears = new Set<number>();
 
-    data.gdp.data.forEach((item: any) => {
+    data.gdp.data.forEach((item: EconomicDataItem) => {
       allYears.add(item.year);
     });
 
-    data.populationGrowth.data.forEach((item: any) => {
+    data.populationGrowth.data.forEach((item: EconomicDataItem) => {
       allYears.add(item.year);
     });
 
-    data.educationExpenditure.data.forEach((item: any) => {
+    data.educationExpenditure.data.forEach((item: EconomicDataItem) => {
       allYears.add(item.year);
     });
 
-    data.inflation.data.forEach((item: any) => {
+    data.inflation.data.forEach((item: EconomicDataItem) => {
       allYears.add(item.year);
     });
 
-    data.labourForce.data.forEach((item: any) => {
+    data.labourForce.data.forEach((item: EconomicDataItem) => {
       allYears.add(item.year);
     });
 
@@ -134,18 +148,20 @@ export const useEconomicDashboard = (
 
     // Map each year to a data object
     return years.map((year) => {
-      const gdpItem = data.gdp.data.find((item: any) => item.year === year);
+      const gdpItem = data.gdp.data.find(
+        (item: EconomicDataItem) => item.year === year
+      );
       const populationItem = data.populationGrowth.data.find(
-        (item: any) => item.year === year
+        (item: EconomicDataItem) => item.year === year
       );
       const educationItem = data.educationExpenditure.data.find(
-        (item: any) => item.year === year
+        (item: EconomicDataItem) => item.year === year
       );
       const inflationItem = data.inflation.data.find(
-        (item: any) => item.year === year
+        (item: EconomicDataItem) => item.year === year
       );
       const labourItem = data.labourForce.data.find(
-        (item: any) => item.year === year
+        (item: EconomicDataItem) => item.year === year
       );
 
       return {

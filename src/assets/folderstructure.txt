@@ -5,6 +5,9 @@ src
 │   └── paynet.png
 ├── components
 │   ├── internals
+│   │   ├── CountryInsights.tsx
+│   │   ├── DashboardDataChart.tsx
+│   │   ├── DashboardDataFilters.tsx
 │   │   ├── EconomicDataChart.tsx
 │   │   ├── EconomicDataFilters.tsx
 │   │   ├── EconomicDataTable.tsx
@@ -27,10 +30,13 @@ src
 │       │   ├── inputs.tsx
 │       │   ├── navigation.tsx
 │       │   └── surfaces.ts
-│       └── themePrimitives.ts
+│       ├── themePrimitives.ts
+│       └── themeTypes.ts
 ├── context
 │   └── AuthContext.tsx
 ├── hooks
+│   ├── useAuth.ts
+│   ├── useEconomicDashboard.ts
 │   └── useEconomicData.ts
 ├── main.tsx
 ├── pages
@@ -46,5 +52,6 @@ src
 │   └── economic-data.service.ts
 ├── styles
 ├── types
+│   └── authContextTypes.ts
 ├── utils
 └── vite-env.d.ts

@@ -123,11 +123,13 @@ export default function useEconomicData({
   useEffect(() => {
     fetchTableData(true);
     fetchChartData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Reload table data on pagination changes
   useEffect(() => {
     fetchTableData(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, rowsPerPage]);
 
   // Handle pagination changes
